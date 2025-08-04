@@ -1,92 +1,113 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Tributarista</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Especialistas em recuperação de tributos, planejamento tributário e adaptação à Reforma Tributária. Atendemos empresas de todos os portes em todo o Brasil.">
+  <meta name="keywords" content="recuperação de tributos, planejamento tributário, reforma tributária 2026, ICMS, PIS, COFINS, IRPJ, CSLL, consultoria tributária">
+  <meta name="author" content="Lima Consultoria Tributária">
+  <title>Dr. Tributarista | Consultoria Tributária Especializada</title>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Pixel Meta (Facebook) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'XXXXXXXXXXXXXXX');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=XXXXXXXXXXXXXXX&ev=PageView&noscript=1"/></noscript>
+
   <style>
-    body { margin: 0; font-family: 'Roboto', sans-serif; color: #1a1a1a; }
-    header { background-color: #0a1f36; color: white; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; }
-    header img { height: 50px; }
-    nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
-    .hero { background-color: #f5f5f5; padding: 60px 40px; text-align: center; }
-    .hero h1 { font-size: 2.5em; margin-bottom: 10px; }
-    .hero p { font-size: 1.2em; margin-bottom: 20px; }
-    .cta-btn { background-color: #e1b100; color: #000; padding: 15px 30px; font-size: 1em; border: none; border-radius: 8px; cursor: pointer; text-decoration: none; }
-    section { padding: 60px 40px; max-width: 900px; margin: auto; }
-    section h2 { font-size: 2em; margin-bottom: 20px; color: #0a1f36; }
-    section p { line-height: 1.6; }
-    .servicos, .diferenciais, .depoimentos { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .card { background-color: #fafafa; padding: 20px; border-radius: 8px; border-left: 5px solid #e1b100; }
-    footer { background-color: #0a1f36; color: white; text-align: center; padding: 30px; }
-    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 15px 20px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
-    @media(max-width: 768px){ .servicos, .diferenciais, .depoimentos { grid-template-columns: 1fr; } }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    nav ul { list-style: none; display: flex; justify-content: center; padding: 1rem; background: #003366; margin: 0; }
+    nav ul li { margin: 0 1rem; }
+    nav ul li a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; max-width: 960px; margin: auto; }
+    footer { background: #f0f0f0; padding: 2rem; text-align: center; }
+    .whatsapp-fixo {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background-color: #25d366;
+      border-radius: 50%;
+      padding: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .whatsapp-fixo img {
+      width: 32px;
+      height: 32px;
+      filter: brightness(0) invert(1);
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo-atualizado.jpeg" alt="Logo Dr. Tributarista">
-    <nav>
-      <a href="#servicos">Serviços</a>
-      <a href="#sobre">Quem Somos</a>
-      <a href="#depoimentos">Depoimentos</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
 
-  <div class="hero">
-    <h1>Consultoria Tributária Inteligente e Personalizada</h1>
-    <p>Recupere tributos pagos indevidamente, reduza sua carga fiscal e prepare-se para a Reforma Tributária com quem entende do assunto.</p>
-    <a href="https://wa.me/5511989112252" class="cta-btn">Agende uma análise gratuita</a>
-  </div>
+<nav>
+  <ul>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+</nav>
 
-  <section id="sobre">
-    <h2>Quem Somos</h2>
-    <p>O Dr. Tributarista é especialista em recuperação de tributos, planejamento fiscal e aplicação prática da Reforma Tributária de 2026. Com atuação direta e técnica, nosso compromisso é oferecer soluções inteligentes para reduzir a carga tributária de empresas de todos os portes, com foco em resultados concretos e relacionamento próximo.</p>
-  </section>
+<section id="sobre">
+  <h1>Dr. Tributarista</h1>
+  <p>Especialistas em recuperação de tributos, auditoria fiscal e planejamento tributário com foco prático na Reforma Tributária de 2026.</p>
+</section>
 
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="servicos">
-      <div class="card">Recuperação de tributos: ICMS, PIS, COFINS, IRPJ, CSLL, IPI e II</div>
-      <div class="card">Revisão de apuração de ICMS, DIFAL, PIS/COFINS</div>
-      <div class="card">Planejamento tributário preventivo e estratégico</div>
-      <div class="card">Parcelamentos com redução de tributos e encargos</div>
-      <div class="card">Análise de Regimes Especiais e Operações Interestaduais</div>
-      <div class="card">Preparação para a Reforma Tributária de 2026</div>
-    </div>
-  </section>
+<section id="servicos">
+  <h2>Serviços</h2>
+  <ul>
+    <li>Recuperação de tributos (ICMS, PIS, COFINS, IRPJ, CSLL)</li>
+    <li>Planejamento tributário</li>
+    <li>Auditoria fiscal preventiva</li>
+    <li>Parcelamentos com reduções</li>
+    <li>Consultoria sobre a Reforma Tributária</li>
+  </ul>
+</section>
 
-  <section id="diferenciais">
-    <h2>Diferenciais</h2>
-    <div class="diferenciais">
-      <div class="card">Mais de R$ 85 milhões em tributos recuperados</div>
-      <div class="card">Atendimento direto com especialista</div>
-      <div class="card">Alta performance técnica e domínio legislativo</div>
-      <div class="card">Visão estratégica com foco prático em resultados</div>
-    </div>
-  </section>
+<section id="blog">
+  <h2>Blog</h2>
+  <p>Confira nossos artigos sobre Reforma Tributária, ICMS, planejamento fiscal e mais. <a href="/artigos/impacto-reforma-tributaria-icms-2026.html">Leia agora</a>.</p>
+</section>
 
-  <section id="depoimentos">
-    <h2>Depoimentos</h2>
-    <div class="depoimentos">
-      <div class="card">“Graças ao Dr. Tributarista conseguimos recuperar mais de R$ 500 mil em ICMS em menos de 90 dias.” – Cliente do setor de cosméticos</div>
-      <div class="card">“O atendimento é direto, técnico e sem enrolação. Confiança total no trabalho!” – Contador parceiro</div>
-      <div class="card">“Nos ajudaram a estruturar todo o planejamento fiscal da empresa com base na nova reforma tributária.” – Empresário do setor de comércio</div>
-    </div>
-  </section>
+<section id="contato">
+  <h2>Fale Conosco</h2>
+  <form>
+    <label>Nome:<br><input type="text" name="nome" required></label><br><br>
+    <label>E-mail:<br><input type="email" name="email" required></label><br><br>
+    <label>WhatsApp:<br><input type="tel" name="whatsapp" required></label><br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
 
-  <section id="contato">
-    <h2>Fale Conosco</h2>
-    <p>E-mail: <strong>leonardo@drtributarista.com.br</strong></p>
-    <p>WhatsApp: <a href="https://wa.me/5511989112252">(11) 98911-2252</a></p>
-  </section>
+<footer>
+  <p>© 2025 Lima Consultoria Tributária. Todos os direitos reservados.</p>
+  <p><a href="/politica-de-privacidade.html">Política de Privacidade e Cookies</a></p>
+</footer>
 
-  <footer>
-    <p>&copy; 2025 Dr. Tributarista. Todos os direitos reservados.</p>
-  </footer>
+<a href="https://wa.me/5511989112252" class="whatsapp-fixo" target="_blank" title="Fale conosco pelo WhatsApp">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp" />
+</a>
 
-  <a class="whatsapp-btn" href="https://wa.me/5511989112252">Fale pelo WhatsApp</a>
 </body>
 </html>
